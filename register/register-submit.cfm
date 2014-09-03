@@ -258,21 +258,27 @@
 
 							<cfset videoFile = expandPath('#request.webRoot#videos\#uploadResult.fileName#')>
 							<cfset newFileName = uploadResult.fileName>
+							<cfset newFileName = getToken(newFileName, 1, '.') & '.flv'>
 
 							<!--- convert the video to mp4 and flv formats (i should probably move this to a scheduled task...) --->
-							<cfif right(videoFile, 3) neq 'mp4'>
-								<cfset result = oVideos.convertVideo(videoFile=videoFile, toFormat='mp4')>
-								<cfif result.success>
-									<cfset newFileName = getToken(newFileName, 1, '.') & '.mp4'>
+							<!--- trying threads to not block page processing --->
+							<cfthread name="createMp4#session.stamp#" action="run"></cfthread>
+								<cfif right(videoFile, 3) neq 'mp4'>
+									<cfset result = oVideos.convertVideo(videoFile=videoFile, toFormat='mp4')>
+									<cfif result.success>
+										<cfset thread.newFileName = getToken(newFileName, 1, '.') & '.mp4'>
+									</cfif>
 								</cfif>
-							</cfif>
 
-							<cfif right(videoFile, 3) neq 'flv'>
-								<cfset result = oVideos.convertVideo(videoFile=videoFile, toFormat='flv')>
-								<cfif result.success>
-									<cfset newFileName = getToken(newFileName, 1, '.') & '.flv'>
+
+							<cfthread name="createFlv#session.stamp#" action="run"></cfthread>
+								<cfif right(videoFile, 3) neq 'flv'>
+									<cfset result = oVideos.convertVideo(videoFile=videoFile, toFormat='flv')>
+									<cfif result.success>
+										<cfset thread.newFileName = getToken(newFileName, 1, '.') & '.flv'>
+									</cfif>
 								</cfif>
-							</cfif>
+
 
 							<!--- insert video --->
 							<cfset videoId = oVideos.insertVideo (
