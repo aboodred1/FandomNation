@@ -1,0 +1,54 @@
+/*body{background-color:yellow;}*/
+#page-wrapper{width:480px;margin:auto;position:relative;}
+
+.page-title{height:54px;width:100%;background:transparent none center center no-repeat;}
+.page-title.home{background-image:url(../images/page-header-may-the-ultimate-fans-win-sm.png);}
+.page-title.register{background-image:url(../images/page-header-how-to-enter-sm.png);}
+.page-title.gallery{background-image:url(../images/page-header-check-out-the-fandomnation-sm.png);}
+.page-title.winners{background-image:url(../images/page-header-the-winners-sm.png);}
+.page-title.already-entered{background-image:url(../images/page-header-already-entered-sm.png);}
+.page-title.success{background-image:url(../images/page-header-your-entry-has-been-received-sm.png);}
+.header-copy{margin-top:1em;text-align:center;}
+
+.form-wrapper{width:400px;margin:auto;}
+
+
+#header{width:100%;height:217px;background:transparent url(../images/header-background-sm.jpg) top center no-repeat;position:relative;}
+.mobile-nav{width:100%;height:40px;background:url(../images/compact-nav-background.jpg) top right no-repeat;position:relative;cursor:pointer;}
+.mobile-nav-active{display:none;position:absolute;top:40px;width:480px;z-index:199;}
+.mobile-nav-active a{display:block;width:480px;text-align:center;}
+.mobile-nav-active a{background:rgb(0,0,0);
+    background: transparent\9;
+    background:rgba(0,0,0,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    zoom: 1;}
+.mobile-nav-active a.active{background:transparent url(../images/body-background.jpg);}
+#nav{display:none;}
+#content{width:434px;margin:auto;padding:2em 0;}
+#footer{width:100%;height:223px;background:transparent url(../images/footer-background-sm.png) top center no-repeat;position:relative;}
+#footer div{position:absolute;top:125px;left:32px;}
+#footer div p{color:#ffffff;font-size:.875em;line-height:1.2;margin-bottom:0;}
+.disclaimer{width:434px;margin:auto;}
+
+.user-image-frame{width:320px;height:320px;padding:10px 10px;background-image:url(../images/image-frame.png);overflow:hidden;margin:auto;}
+.user-image{width:300px;height:300px;overflow:hidden;}
+.gallery-image-frame{width:170px;height:170px;padding:2px;background-image:url(../images/gallery-image-background.png);display:inline-block;float:left;}
+.gallery-image{width:166px;height:166px;position:relative;overflow:hidden;}
+.play-button{margin:61px auto 0;}
+
+
+.modal-lg{width:434px;margin:auto;}
+
+#CSPhotoSelector .CSPhotoSelector_dialog {
+  width: 434px;
+}
+.CSPhotoSelector_wrapper{
+	width:412px;
+}
+#CSPhotoSelector .CSPhotoSelector_content {
+	overflow-y:scroll;
+}
+
+/*BOOTSTRAP OVERRIDES*/
+.container{width:480px !important;}

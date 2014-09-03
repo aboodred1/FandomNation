@@ -1,0 +1,31 @@
+/*body{background-color:blue;background-image:none;}*/
+#page-wrapper{width:1024px;margin:auto;position:relative;}/*background-color:yellow;*/
+
+.page-title{height:54px;width:100%;background:transparent none center center no-repeat;}
+.page-title.home{background-image:url(../images/page-header-may-the-ultimate-fans-win.png);}
+.page-title.register{background-image:url(../images/page-header-how-to-enter.png);}
+.page-title.gallery{background-image:url(../images/page-header-check-out-the-fandomnation.png);}
+.page-title.winners{background-image:url(../images/page-header-the-winners.png);}
+.page-title.already-entered{background-image:url(../images/page-header-already-entered.png);}
+.page-title.success{background-image:url(../images/page-header-your-entry-has-been-received.png);}
+.header-copy{padding:15px 0 0 30px;margin-top:-1.5em;}
+
+.form-wrapper{width:544px;margin:auto;}
+
+.gallery-wrapper{padding-left:30px;}
+
+#header{width:100%;height:350px;background:transparent url(../images/header-background.jpg) top center no-repeat;position:relative;}
+.mobile-nav{display:none;}
+#nav{position:absolute;bottom:0;left:243px;height:42px;margin:auto;}
+#nav a{display:inline-block;}
+#content{width:764px;margin:auto;padding:2em 0;}
+#footer{width:100%;height:125px;background:transparent url(../images/footer-background.png) top center no-repeat;position:relative;}
+#footer div{position:absolute;top:45px;left:320px;width:559px;}
+#footer div p{color:#ffffff;font-size:.875em;line-height:1.2;margin-bottom:0;}
+.disclaimer{width:764px;margin:auto;}
+
+.modal-lg{width:764px;margin:auto;}
+
+/*BOOTSTRAP OVERRIDES*/
+.container{width:1024px !important;}
+

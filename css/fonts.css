@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'EndzoneTechCondMedium';
+    src: url('../fonts/endzonetechcond-medium.eot');
+    src: url('../fonts/endzonetechcond-medium.eot') format('embedded-opentype'),
+         url('../fonts/endzonetechcond-medium.woff') format('woff'),
+         url('../fonts/endzonetechcond-medium.ttf') format('truetype'),
+         url('../fonts/endzonetechcond-medium.svg#EndzoneTechCondMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneTechCondLight';
+    src: url('../fonts/endzonetechcond-light.eot');
+    src: url('../fonts/endzonetechcond-light.eot') format('embedded-opentype'),
+         url('../fonts/endzonetechcond-light.woff') format('woff'),
+         url('../fonts/endzonetechcond-light.ttf') format('truetype'),
+         url('../fonts/endzonetechcond-light.svg#EndzoneTechCondLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'EndzoneTechCondBold';
+    src: url('../fonts/endzonetechcond-bold.eot');
+    src: url('../fonts/endzonetechcond-bold.eot') format('embedded-opentype'),
+         url('../fonts/endzonetechcond-bold.woff') format('woff'),
+         url('../fonts/endzonetechcond-bold.ttf') format('truetype'),
+         url('../fonts/endzonetechcond-bold.svg#EndzoneTechCondBold') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneSlabBold';
+    src: url('../fonts/endzoneslab-bold.eot');
+    src: url('../fonts/endzoneslab-bold.eot') format('embedded-opentype'),
+         url('../fonts/endzoneslab-bold.woff') format('woff'),
+         url('../fonts/endzoneslab-bold.ttf') format('truetype'),
+         url('../fonts/endzoneslab-bold.svg#EndzoneSlabBold') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneSlabLight';
+    src: url('../fonts/endzoneslab-light.eot');
+    src: url('../fonts/endzoneslab-light.eot') format('embedded-opentype'),
+         url('../fonts/endzoneslab-light.woff') format('woff'),
+         url('../fonts/endzoneslab-light.ttf') format('truetype'),
+         url('../fonts/endzoneslab-light.svg#EndzoneSlabLight') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneSlabLightItalic';
+    src: url('../fonts/endzoneslab-lightitalic.eot');
+    src: url('../fonts/endzoneslab-lightitalic.eot') format('embedded-opentype'),
+         url('../fonts/endzoneslab-lightitalic.woff') format('woff'),
+         url('../fonts/endzoneslab-lightitalic.ttf') format('truetype'),
+         url('../fonts/endzoneslab-lightitalic.svg#EndzoneSlabLightItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneSlabMedium';
+    src: url('../fonts/endzoneslab-medium.eot');
+    src: url('../fonts/endzoneslab-medium.eot') format('embedded-opentype'),
+         url('../fonts/endzoneslab-medium.woff') format('woff'),
+         url('../fonts/endzoneslab-medium.ttf') format('truetype'),
+         url('../fonts/endzoneslab-medium.svg#EndzoneSlabMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'EndzoneSlabMediumItalic';
+    src: url('../fonts/endzoneslab-mediumitalic.eot');
+    src: url('../fonts/endzoneslab-mediumitalic.eot') format('embedded-opentype'),
+         url('../fonts/endzoneslab-mediumitalic.woff') format('woff'),
+         url('../fonts/endzoneslab-mediumitalic.ttf') format('truetype'),
+         url('../fonts/endzoneslab-mediumitalic.svg#EndzoneSlabMediumItalic') format('svg');
+}
+
+

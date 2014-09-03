@@ -1,0 +1,86 @@
+body{background:#ffffff url(../images/body-background.jpg);}
+*{font-family:EndzoneTechCondMedium,sans-serif;line-height:1.4;color:#333333;font-size:16px;}
+.serif{font-family:EndzoneSlabMedium,serif;}
+.serif-bold{font-family:EndzoneSlabBold,serif;}
+strong, b{font-family:EndzoneTechCondBold,sans-serif;font-weight:700;}
+.error{color:#990000 !important;}
+div.has-error label{color:#990000;}
+a, a sup{text-decoration:underline;color:inherit;font-size:inherit;}
+a:hover{text-decoration:underline;color:inherit;font-size:inherit;}
+.small{font-size:85%;}
+.bold{font-family:EndzoneTechCondBold,sans-serif;}
+.ul{text-decoration:underline;}
+img{max-width:100%;}
+a img{border:0 none !important;outline:none !important;}
+a:active,a:focus{outline:none;-moz-outline-style:none;}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+input[type=image]{
+	        border:0 none;
+	   -moz-border:0 none;
+	-webkit-border:0 none;
+	outline:0;
+}
+label, label a{font-family:EndzoneSlabBold,serif;}
+div.checkbox label{font-size:.75em;font-family:Arial,sans-serif;}
+div.checkbox label a{font-size:inherit;font-family:Arial,sans-serif;}
+input, select, textarea, .btn-select{webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;}
+
+
+.user-image-frame{width:340px;height:346px;padding:21px 17px;background-image:url(../images/image-frame.png);overflow:hidden;}
+.user-image{width:305px;height:305px;overflow:hidden;}
+.facebook-profile-image{width:59px;height:59px;}
+.user-name,.user-place,.user-caption{font-family:EndzoneTechCondBold,sans-serif;font-weight:bold;}
+.user-name{font-size:1.125em;text-transform:uppercase;}
+.user-place{font-size:.875em;}
+.user-caption, h1{font-size:1.4375em;font-weight:normal;}
+.user-caption::before{content:"\201C";}
+.user-caption::after{content:"\201D";}
+
+.gallery-image-frame{width:184px;height:183px;padding:2px;background-image:url(../images/gallery-image-background.png);display:inline-block;float:left;}
+.gallery-image{width:179px;height:179px;position:relative;overflow:hidden;}
+.play-button{background:transparent url(../images/button-play.png);width:49px;height:49px;margin:67px auto 0;}
+.gallery-user-name{position:absolute;bottom:0;left:0;right:0;height:24px;text-align:center;color:white;text-transform:uppercase;}
+.gallery-user-name{background:rgb(0,0,0);
+    background: transparent\9;
+    background:rgba(0,0,0,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    zoom: 1;}
+
+.winner-card-frame{width:273px;height:376px;padding:2px 17px;background-image:url(../images/winner-card-background.png);display:inline-block;margin:0 -.5em;}
+.winner-card-header{width:240px;height:76px;}
+.winner-card-body{margin-top:1px;width:240px;height:187px;}
+.winner-card-footer{background-image:url(../images/winner-card-footer-background.jpg);width:240px;height:92px;padding:8px 12px;}
+.winner-card-footer *{color:white;}
+.winner-name{font-size:1.325em;font-family:EndzoneTechCondBold,sans-serif;font-weight:bold;}
+.winner-place{font-size:.6775em;}
+.winner-challenge{font-size:.8125em;}
+
+
+.btn-select, .btn-select:hover, .btn-select.dropdown-toggle{background:#ffffff;}
+.btn-select span{color:#000000;background:#ffffff;}
+.has-error .btn-select{border:1px solid #990000;/*background-color:red;color:white;*/}
+.custom-select{}
+.custom-select-label{max-width:77%;padding-left:1em;text-align:left;overflow:hidden;}
+.custom-select .caret{color:#000000;}
+.custom-select-options{max-height:200px;overflow-y:auto;}
+.custom-select-options a{text-decoration:none;font-size:.85em;}
+
+/* SOME MODAL STUFF */
+.modal-header .close span{font-size:1.25em;color:#000000 !important;opacity: 1 !important;}
+.modal-vertical-centered {
+  transform: translate(0, 80%) !important;
+  -ms-transform: translate(0, 80%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 80%) !important; /* Safari and Chrome */
+}
+.modal-content{background:#ffffff url(../images/body-background.jpg);}
+
+/*@media only screen and (max-width:675px){
+#upload_from_facebook_button{display:none;}
+#upload_from_facebook_text{display:none;}*/
