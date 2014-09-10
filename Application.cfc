@@ -120,13 +120,13 @@
 
 		<cfargument name="template" required="yes" type="string">
 
-		<cfif not this.debugMode>
-			<!--- <cfif (dateCompare(now(), '2014-07-14') lt 0 or dateCompare(now(), '2014-09-08') gte 0)>
-				<cfif not findNoCase("winners", cgi.script_name)>
+
+			<cfif (dateCompare(now(), '2014-07-14') lt 0 or dateCompare(now(), '2014-09-08') gte 0)>
+				<cfif findNoCase('register', cgi.script_name)>
 					<cfset arguments.template = "holding/index.cfm">
 				</cfif>
-			</cfif> --->
-		</cfif>
+			</cfif>
+		<!--- <cfif not this.debugMode></cfif> --->
 
 		<cfinclude template="#arguments.template#">
 
