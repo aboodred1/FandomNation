@@ -21,7 +21,11 @@
 		<cfif which eq "too-soon">
 			COMING SOON!
 		<cfelse>
-			Sorry, but the entry period has ended.
+
+			Sorry fans, but the NFL Extra Points #FandomNation Challenge has closed. <br>
+			Check back on October 2nd for a complete list of winners. <br>
+			In the meantime, see all of our #FandomNation Challenge submissions on the <a href="<cfoutput>#request.webRoot#</cfoutput>gallery/">View Entries</a> tab.
+
 		</cfif>
 
 		</strong></p>
