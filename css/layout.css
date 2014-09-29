@@ -52,16 +52,15 @@ input, select, textarea, .btn-select{webkit-border-radius: 0 !important;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
     zoom: 1;}
-
-.winner-card-frame{width:273px;height:376px;padding:2px 17px;background-image:url(../images/winner-card-background.png);display:inline-block;margin:0 -.5em;}
-.winner-card-header{width:240px;height:76px;}
-.winner-card-body{margin-top:1px;width:240px;height:187px;}
-.winner-card-footer{background-image:url(../images/winner-card-footer-background.jpg);width:240px;height:92px;padding:8px 12px;}
+    
+    
+.winner-card-frame{width:273px;height:376px;padding:2px 19px;display:inline-block;margin:0 -.5em;position:relative;}
+.winner-image{position:absolute;top:78px;width:236px;height:236px;}
+.winner-card-footer{background-image:url(../images/winner-card-footer-background.jpg);position:absolute;bottom:22px;width:236px;height:62px;padding:8px 12px;}
 .winner-card-footer *{color:white;}
+.winner-info{text-align:center;}
 .winner-name{font-size:1.325em;font-family:EndzoneTechCondBold,sans-serif;font-weight:bold;}
 .winner-place{font-size:.6775em;}
-.winner-challenge{font-size:.8125em;}
-
 
 .btn-select, .btn-select:hover, .btn-select.dropdown-toggle{background:#ffffff;}
 .btn-select span{color:#000000;background:#ffffff;}

@@ -346,6 +346,71 @@
 				<div class="col-xs-2"></div>
 			</div>
 
+		<cfelseif arguments.which eq "winners">
+
+			<cfquery name="getWinners" datasource="#this.dsn#">
+				select *
+				from uvwselectentries
+				where entryid in (
+					73,
+					85,
+					125,
+					199,
+					262,
+					297,
+					420
+				)
+				order by challengeid desc
+			</cfquery>
+
+			<cfoutput>
+
+				<div class="row">
+					<div class="col-xs-2"></div>
+					<cfloop from="1" to="7" index="i">
+
+						<cfif i eq 6>
+							<div class="col-xs-2"></div>
+						</cfif>
+
+						<cfset frameBackgroundImg = "#request.webRoot#images/#replace(Application.Challenges.challengeCardImage[i], 'challenge-', 'winner-')#">
+						<cfset backgroundImg = "">
+
+						<!--- photo or video? --->
+						<cfif len(getWinners.videoUrl[i])>
+							<cfif left(getWinners.thumbnail[i], 4) eq "http">
+								<cfset backgroundImg ="#getWinners.thumbnail[i]#">
+							<cfelse>
+								<cfset backgroundImg ="#request.webRoot#videos/#getWinners.thumbnail[i]#">
+							</cfif>
+						<cfelseif len(getWinners.photoUrl[i])>
+							<cfif left(getWinners.photoUrl[i], 4) eq "http">
+								<cfset backgroundImg ="#getWinners.photoUrl[i]#">
+							<cfelse>
+								<cfset backgroundImg ="#request.siteUrl#photos/#getWinners.photoUrl[i]#">
+							</cfif>
+						</cfif>
+						<div class="<cfoutput>#arguments.col_size#</cfoutput> winner-card-frame" style="background-image:url(#frameBackgroundImg#);" data-id="#getWinners.entryKey[i]#">
+							<!--- <div class="winner-card-header"></div> --->
+							<div class="winner-image" style="background-image:url(#backgroundImg#);background-size:cover;-ms-behavior: url(#request.webRoot#scripts/backgroundsize.min.htc);">
+								<cfif len(getWinners.videoUrl[i])>
+									<div class="play-button"></div>
+								</cfif>
+							</div>
+							<div class="winner-card-footer">
+								<div class="winner-info">
+									<span class="winner-name">#getWinners.firstName[i]# #left(getWinners.lastName[i], 1)#.</span>
+									<span class="winner-place">#getWinners.city#, #getWinners.state#</span>
+								</div>
+								<div class="winner-challenge"></div>
+							</div>
+						</div>
+					</cfloop>
+					<div class="col-xs-2"></div>
+				</div>
+
+			</cfoutput>
+
 		</cfif>
 
 	</cffunction>
