@@ -33,7 +33,7 @@ input, select, textarea, .btn-select{webkit-border-radius: 0 !important;
 
 
 .user-image-frame{width:340px;height:346px;padding:21px 17px;background-image:url(../images/image-frame.png);overflow:hidden;}
-.user-image{width:305px;height:305px;overflow:hidden;}
+.user-image{width:305px;height:305px;overflow:auto;}
 .facebook-profile-image{width:59px;height:59px;}
 .user-name,.user-place,.user-caption{font-family:EndzoneTechCondBold,sans-serif;font-weight:bold;}
 .user-name{font-size:1.125em;text-transform:uppercase;}
