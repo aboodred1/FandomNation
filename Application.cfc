@@ -381,7 +381,7 @@
 							<cfif left(getWinners.thumbnail[i], 4) eq "http">
 								<cfset backgroundImg ="#getWinners.thumbnail[i]#">
 							<cfelse>
-								<cfset backgroundImg ="#request.webRoot#videos/#getWinners.thumbnail[i]#">
+								<cfset backgroundImg ="#request.webRoot#videos/#getWinners.thumbnail[i]#?t=#getTickCount()#">
 							</cfif>
 						<cfelseif len(getWinners.photoUrl[i])>
 							<cfif left(getWinners.photoUrl[i], 4) eq "http">
@@ -400,7 +400,7 @@
 							<div class="winner-card-footer">
 								<div class="winner-info">
 									<span class="winner-name">#getWinners.firstName[i]# #left(getWinners.lastName[i], 1)#.</span>
-									<span class="winner-place">#getWinners.city#, #getWinners.state#</span>
+									<span class="winner-place">#getWinners.city[i]#, #getWinners.state[i]#</span>
 								</div>
 								<div class="winner-challenge"></div>
 							</div>
